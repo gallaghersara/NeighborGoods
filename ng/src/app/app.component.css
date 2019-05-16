@@ -1,0 +1,21 @@
+
+* {
+    width: 100%;
+    /* margin-left: -10px;
+    margin-right: -10px; */
+    /* padding-top: 40px; */
+    /* padding-left: 0%; */
+  height: 100%;
+  background-image: url('../assets/bg.jpg');
+      /* background-color: #66cccc; */
+      /* background-image: url("/imgs/bg.jpg");  */
+      background-position: 100%;
+      background-attachment: fixed;
+      -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        /* background-size: inherit; */
+      font-family: 'Courier New', Courier, monospace;
+      background-size: 100%;
+  }
+  

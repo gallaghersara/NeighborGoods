@@ -1,0 +1,47 @@
+<nav class="mainnavbar">
+  <ul class="nav">
+    <li class="homepageli">
+      <div class="homepagelidiv"><a routerLink="/"><img src="../../assets/logo.jpg" alt=""></a></div>
+    </li>
+    <!-- <li><a href="/about">About</a></li> -->
+    <!-- <li><a routerLink="/homepage">home</a></li> -->
+    <li routerLinkActiv="active" routerLinkActivOptions="{wxact:true}"><a class="login" routerLink="/login">Login</a></li>
+    <li>
+      
+       
+        <a (click)="drawer.toggle()" class="shop" routerLink="/shop">
+            Our Goods</a>
+          
+        
+      
+      <mat-drawer #drawer class="sidenav">
+          <li>Sub Cutegories</li>
+        </mat-drawer>
+    </li>
+    <li><a class="sellers" routerLink="/sellers">Our Artist</a></li>
+    <!-- <li><a class="blogli" routerLink="/blog">Our Artist</a></li> -->
+    <!-- <li><a class="contactli" href="/contact">Contact Us</a></li> -->
+    <li><a class="register" routerLink="/register">Register</a></li>
+    <li><a class="profile" routerLink="/profile">Profile</a></li>
+    <!-- <li>
+          <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
+          <script>
+            function myFunction() {
+              var input, filter, ul, li, a, i;
+              input = document.getElementById("myInput");
+              filter = input.value.toUpperCase();
+              ul = document.getElementById("myUL");
+              li = ul.getElementsByTagName("li");
+              for (i = 0; i < li.length; i++) {
+                a = li[i].getElementsByTagName("a")[0];
+                if (a.innerHTML.toUpperCase().indexOf(filter) > -1) {
+                  li[i].style.display = "";
+                } else {
+                  li[i].style.display = "none";
+                }
+              }
+            }
+          </script>
+        </li> -->
+  </ul>
+</nav>

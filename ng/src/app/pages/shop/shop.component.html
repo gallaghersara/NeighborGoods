@@ -1,0 +1,39 @@
+<div class="shoppage">
+
+<!-- <ul *ngfor = "let data of httpdata">
+    <li>{{data.title}}</li> 
+ </ul> -->
+
+<div class="container">
+
+    <div class="row card-group">
+     
+  <div (click)="itemInfo()" *ngFor="let data of httpdata" class="col-6 col-lg-3 col-md-4 col-sm-6">
+    <!-- <div class="card-deck"> -->
+      <!-- <div class="card col-sm-4"> -->
+        <div class="card-block">
+            <!-- <div class="card"> -->
+          <h5 class="card-title">{{data.title}}</h5>
+          <!-- <img src="/imgs/rachel/WhatsApp Image 2018-10-24 at 15.24.06.jpeg" alt=""> -->
+          <!-- <img src="{{data:image}}" alt=""> -->
+
+
+          
+
+          <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQssTnDfpWP00oLIien7PYSJi2ZKHeSS_n7CJbE7XTu_iolWzP0"
+            alt="">
+
+
+
+          <h6>price: {{data.price | currency:'ILS' : 'symbol' : '1.0'}} </h6>
+          <link rel="icon" type="image/x-icon" href="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwin_ebx8NLgAhXL2aQKHcxSDeIQjRx6BAgBEAU&url=http%3A%2F%2Fwww.everysecond.io%2Ffacebook&psig=AOvVaw3ivOKWtGynhaGHDo-HPhFo&ust=1551046566893396">
+        </div>
+
+      </div>
+    <!-- </div>
+  </div> -->
+</div>
+
+
+
+</div>

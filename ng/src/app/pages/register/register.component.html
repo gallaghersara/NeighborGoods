@@ -1,0 +1,38 @@
+<br><br><br>
+
+<h2>Register</h2>
+
+<mat-card>
+  <mat-card-title>
+
+  </mat-card-title>
+  <mat-card-content>
+    <form (submit)="onRegisterSubmit()" method="POST">
+      <!-- <form id="formData" #userData="ngForm" (ngSubmit)="registerUser(userData.value)"> -->
+      <!-- <mat-input-container> -->
+      <input matInput placeholder="firstName" name="fname" type="text" [(ngModel)]="fname"><br>
+      <input matInput placeholder="lastName" name="lname" type="text" [(ngModel)]="lname"><br>
+      <input matInput placeholder="username" name="username" type="text" [(ngModel)]="username"><br>
+      <input matInput placeholder="email" name="email" type="email" [(ngModel)]="email"><br>
+      <input matInput placeholder="" name="password" type="password" [(ngModel)]="password"><br>
+      <input type="submit"  value="Register" mut-Button>
+
+      <!-- <input type="submit" (click)='fchange()' value="Register" mut-Button> -->
+
+      <!-- </mat-input-container> -->
+      <!-- <br>
+      <mat-input-container>
+        <input matInput placeholder="firstName" name="firstName" type="text" ngModel>
+      </mat-input-container>
+      <br>
+      <mat-input-container>
+        <input matInput placeholder="firstName" name="firstName" type="text" ngModel>
+      </mat-input-container>
+      <br>
+      <mat-input-container>
+        <input matInput placeholder="firstName" name="firstName" type="text" ngModel>
+      </mat-input-container>
+      <br> -->
+    </form>
+  </mat-card-content>
+</mat-card>

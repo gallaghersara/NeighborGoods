@@ -1,0 +1,29 @@
+
+<mat-icon>home</mat-icon>
+Start editing to see some magic happen :)
+<mat-divider></mat-divider>
+<mat-card class="example-card">
+  <mat-card-header>
+   
+    <mat-icon>more_vert</mat-icon>
+    <div mat-card-avatar class="example-header-image"></div>
+    <mat-card-title>MR. X</mat-card-title>
+    <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    
+  </mat-card-header>
+</mat-card>
+
+<div class="sellercard" >
+  <mat-grid-list cols="4"  Fixedheight="3:1" >
+    <mat-grid-tile class="seller" *ngFor="let data of httpdata;  trackBy: trackByFn" [style.background]="getColor() "
+      [ngClass]="{ odd: odd, even: even }">
+
+      <h3>{{data.sellerName.fn}} {{data.sellerName.ln}}</h3>
+      <img src="{{data.image}}" alt="">
+      <!-- <h6>{{data.Description}} </h6> -->
+
+
+
+    </mat-grid-tile>
+  </mat-grid-list>
+</div>

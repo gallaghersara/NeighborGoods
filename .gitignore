@@ -1,0 +1,11 @@
+# dependencies
+node_modules
+
+# e2e
+ng/e2e
+/e2e/*.js
+/e2e/*.map
+
+
+# S
+backend/config/keys.js
